@@ -1,4 +1,4 @@
-package com.mycompany.laba5.player;
+package fixed_laba5.player;
 
 
 public class Items {

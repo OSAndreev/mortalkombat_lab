@@ -1,4 +1,4 @@
-package com.mycompany.laba5;
+package fixed_laba5;
 import javax.swing.*;
 import java.awt.*;
 

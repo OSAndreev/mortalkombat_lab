@@ -1,13 +1,13 @@
-package com.mycompany.laba5;
+package fixed_laba5;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 
-import com.mycompany.laba5.player.Human;
-import com.mycompany.laba5.player.Items;
-import com.mycompany.laba5.player.Player;
+import fixed_laba5.player.Human;
+import fixed_laba5.player.Items;
+import fixed_laba5.player.Player;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -149,7 +149,7 @@ public class JFrames extends javax.swing.JFrame {
 
         playerPicture.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         playerPicture.setIcon(human.getPicture()); // NOI18N
-        playerPicture.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        playerPicture.setVerticalAlignment(javax.swing.SwingConstants.CENTER);
         jPanel2.add(playerPicture, new org.netbeans.lib.awtextra.AbsoluteConstraints(618, 259, 245, 250));
 
         weakBtn.setBackground(new java.awt.Color(0, 204, 255));
@@ -203,7 +203,7 @@ public class JFrames extends javax.swing.JFrame {
         enemyHPProgressBar.setMinimum(-1);
         jPanel2.add(enemyHPProgressBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 133, 162, 32));
 
-        enemyName.setBackground(new java.awt.Color(255, 255, 0));
+        enemyName.setForeground(new java.awt.Color(255, 255, 0));
         enemyName.setFont(new java.awt.Font("Monospaced", 2, 14)); // NOI18N
         jPanel2.add(enemyName, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 540, 162, 29));
 
@@ -233,7 +233,7 @@ public class JFrames extends javax.swing.JFrame {
 
         playerLevel.setBackground(new java.awt.Color(255, 255, 255));
         playerLevel.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
-        playerLevel.setForeground(new java.awt.Color(0, 0, 0));
+        playerLevel.setForeground(new java.awt.Color(255, 255, 0));
         playerLevel.setText("0 уровень");
         jPanel2.add(playerLevel, new org.netbeans.lib.awtextra.AbsoluteConstraints(842, 235, -1, -1));
 
@@ -354,9 +354,9 @@ public class JFrames extends javax.swing.JFrame {
         jPanel3.add(chooseOptionBox, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 274, -1, 41));
 
         newLevelLabel.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        newLevelLabel.setForeground(new java.awt.Color(0, 0, 0));
+        newLevelLabel.setForeground(new java.awt.Color(255, 255, 0));
         newLevelLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        newLevelLabel.setText("У ВАС НОВЫЙ УРОВЕНЬ!!!");
+        newLevelLabel.setText("Вы перешли на новый уровень!");
         jPanel3.add(newLevelLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 240, 369, 28));
 
         jDialog1.getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 677, 551));
@@ -366,7 +366,7 @@ public class JFrames extends javax.swing.JFrame {
         jLabel20.setFont(new java.awt.Font("Monospaced", 3, 24)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 0, 0));
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel20.setText("Победа на вашей стороне");
+        jLabel20.setText("Вы выиграли!");
 
         jTextField1.setBackground(new java.awt.Color(255, 255, 255));
         jTextField1.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
@@ -380,7 +380,7 @@ public class JFrames extends javax.swing.JFrame {
 
         jLabel21.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel21.setText("Введите имя своего персонажа для добавления");
+        jLabel21.setText("Введите ваше имя для записи");
 
         jLabel22.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(102, 102, 102));
@@ -457,7 +457,7 @@ public class JFrames extends javax.swing.JFrame {
         jLabel23.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(51, 51, 51));
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel23.setText("Таблица рекордов");
+        jLabel23.setText("Результаты");
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -542,7 +542,7 @@ public class JFrames extends javax.swing.JFrame {
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel24.setText("Победа на вашей стороне");
 
-        jLabel25.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jLabel25.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(102, 102, 102));
         jLabel25.setText("К сожалению, Ваш результат не попал в топ 10");
 
@@ -757,7 +757,7 @@ public class JFrames extends javax.swing.JFrame {
         inputLocationsDialog.getContentPane().add(inputLocNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 170, 20));
 
         locationsDialogTitle.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        locationsDialogTitle.setText("Ввведите количество локаций");
+        locationsDialogTitle.setText("Количество локаций");
         inputLocationsDialog.getContentPane().add(locationsDialogTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 280, 40));
 
         confirmCountButton.setText("Подтвердить");
@@ -772,10 +772,10 @@ public class JFrames extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Monospaced", 2, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Monospaced", 2, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(204, 204, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Mortal Kombat");
+        jLabel1.setText("Mortal Kombat Deluxe");
 
         jButton1.setFont(new java.awt.Font("Monospaced", 0, 12)); // NOI18N
         jButton1.setText("Начать новую игру");
@@ -851,7 +851,7 @@ public class JFrames extends javax.swing.JFrame {
     private void prepareDialogs() {
         inputLocationsDialog.setSize(418, 148);
         inputLocationsDialog.setLocationRelativeTo(null);
-        inputLocationsDialog.setTitle("Введите количество локаций");
+        inputLocationsDialog.setTitle("Количество локаций");
         
         
         chooseOptionBox.setVisible(false);
@@ -908,10 +908,10 @@ public class JFrames extends javax.swing.JFrame {
         try {
             switch(chooseOptionBox.getSelectedItem().toString()) {
                 case "Увеличить урон":
-                    human.setDamage(10 + human.getLevel());
+                    human.setDamage(human.getLevel()*1.5 + 5);
                     break;
                 case "Увеличить общее количество здоровья":
-                    human.setMaxHealth(human.getLevel() * 10);
+                    human.setMaxHealth((human.getLevel() * 2) + 20);
                     break;
                 case "Выбрать усиление":
                     if (chooseOptionBox.isVisible())

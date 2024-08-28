@@ -1,11 +1,7 @@
-package com.mycompany.laba5.enemy_fabrics;
+package fixed_laba5.enemy_fabrics;
 
-import com.mycompany.laba5.enemys.LiuKang;
-import com.mycompany.laba5.player.Player;
-
-
-
-
+import fixed_laba5.enemys.LiuKang;
+import fixed_laba5.player.Player;
 
 
 public class LiuKangFabric implements EnemyFabricInterface {

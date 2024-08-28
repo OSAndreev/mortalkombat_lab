@@ -2,23 +2,25 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.laba5.fight;
+package fixed_laba5.fight;
 
 
-import com.mycompany.laba5.Result;
-import com.mycompany.laba5.enemys.*;
-import com.mycompany.laba5.enemy_fabrics.EnemyFabric;
-import com.mycompany.laba5.locations.*;
-import com.mycompany.laba5.player.Human;
-import com.mycompany.laba5.player.Items;
-import com.mycompany.laba5.player.Player;
+import fixed_laba5.Result;
+import fixed_laba5.enemys.*;
+import fixed_laba5.enemy_fabrics.EnemyFabric;
+import fixed_laba5.locations.*;
+import fixed_laba5.locations.*;
+import fixed_laba5.player.Human;
+import fixed_laba5.player.Items;
+import fixed_laba5.player.Player;
+import fixed_laba5.enemys.ShaoKahn;
+
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JComboBox;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JProgressBar;
 import javax.swing.JRadioButton;
 
@@ -155,11 +157,11 @@ public class Fight {
     }
 
     public void Hit(Player human, Player enemy, int a, JLabel label,
-            JLabel label2, JDialog dialog, JLabel label3, CharacterAction action,
-            JProgressBar pr1, JProgressBar pr2, JDialog dialog1,
-            JDialog dialog2, JFrame frame, ArrayList<Result> results,
-            JLabel label4, JLabel label5, JLabel label6, JLabel label7,
-            JLabel label8, Items[] items, JRadioButton rb,  JComboBox optionBox, JLabel newLevelLabel ) {
+                    JLabel label2, JDialog dialog, JLabel label3, CharacterAction action,
+                    JProgressBar pr1, JProgressBar pr2, JDialog dialog1,
+                    JDialog dialog2, JFrame frame, ArrayList<Result> results,
+                    JLabel label4, JLabel label5, JLabel label6, JLabel label7,
+                    JLabel label8, Items[] items, JRadioButton rb, JComboBox optionBox, JLabel newLevelLabel ) {
         label7.setText("");
         human.setAttack(a);
 
@@ -171,10 +173,12 @@ public class Fight {
         }
         
         if (enemy.isWizard() && Math.random() < 0.15){
-            enemy.setAttack(2); // 2 - ОСЛАБЛЕНИЕ
+            enemy.setAttack(2);
+            // ослабление
         }
         else if (enemy.getName().equals("Shao Kahn") && Math.random() < 0.2) {
-            enemy.setAttack(3); // 3 - РЕГЕНЕРАЦИЯ
+            enemy.setAttack(3);
+            // регенерация
         }
         else{
             enemy.setAttack(kind_attack[k]);
@@ -322,7 +326,7 @@ public class Fight {
         
         
         
-        
+
         return enemy;
     }
     

@@ -1,10 +1,11 @@
-package com.mycompany.laba5.enemys;
+package fixed_laba5.enemys;
 
-import com.mycompany.laba5.player.Player;
+import fixed_laba5.player.Player;
+
 import javax.swing.ImageIcon;
 
 
-public class LiuKang extends Player{
+public class LiuKang extends Player {
     
     
     public LiuKang(int level, int health, int  damage, int attack){

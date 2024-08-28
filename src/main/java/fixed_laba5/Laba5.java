@@ -1,4 +1,4 @@
-package com.mycompany.laba5;
+package fixed_laba5;
 
 
 public class Laba5 {

@@ -1,14 +1,15 @@
-package com.mycompany.laba5.fight;
+package fixed_laba5.fight;
 
-import com.mycompany.laba5.enemy_fabrics.EnemyFabric;
-import com.mycompany.laba5.player.Player;
+import fixed_laba5.enemy_fabrics.EnemyFabric;
+import fixed_laba5.enemys.*;
+import fixed_laba5.player.Player;
 import javax.swing.ImageIcon;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JProgressBar;
-import com.mycompany.laba5.enemys.*;
-import com.mycompany.laba5.player.Human;
-import com.mycompany.laba5.player.Items;
+import fixed_laba5.enemys.*;
+import fixed_laba5.player.Human;
+import fixed_laba5.player.Items;
 
 
 

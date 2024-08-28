@@ -1,10 +1,7 @@
-package com.mycompany.laba5.enemy_fabrics;
+package fixed_laba5.enemy_fabrics;
 
-import com.mycompany.laba5.enemys.ShaoKahn;
-import com.mycompany.laba5.player.Player;
-
-
-
+import fixed_laba5.enemys.ShaoKahn;
+import fixed_laba5.player.Player;
 
 
 public class ShaoKahnFabric implements EnemyFabricInterface{

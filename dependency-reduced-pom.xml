@@ -31,7 +31,7 @@
               <transformers>
                 <transformer>
                   <manifestEntries>
-                    <Main-Class>com.mycompany.laba5.Laba5</Main-Class>
+                    <Main-Class>fixed_laba5.Laba5</Main-Class>
                   </manifestEntries>
                 </transformer>
               </transformers>
@@ -43,7 +43,7 @@
   </build>
   <properties>
     <maven.compiler.target>20</maven.compiler.target>
-    <exec.mainClass>com.mycompany.laba5.Laba5</exec.mainClass>
+    <exec.mainClass>fixed_laba5.Laba5</exec.mainClass>
     <maven.compiler.source>20</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>

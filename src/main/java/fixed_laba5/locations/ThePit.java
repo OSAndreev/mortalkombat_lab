@@ -1,4 +1,4 @@
-package com.mycompany.laba5.locations;
+package fixed_laba5.locations;
 
 public class ThePit extends Location {
     public ThePit(){

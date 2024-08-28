@@ -1,12 +1,12 @@
-package com.mycompany.laba5;
+package fixed_laba5;
 
 
 
-import com.mycompany.laba5.fight.ChangeTexts;
-import com.mycompany.laba5.fight.CharacterAction;
-import com.mycompany.laba5.fight.Fight;
-import com.mycompany.laba5.player.Human;
-import com.mycompany.laba5.player.Player;
+import fixed_laba5.fight.ChangeTexts;
+import fixed_laba5.fight.CharacterAction;
+import fixed_laba5.fight.Fight;
+import fixed_laba5.player.Human;
+import fixed_laba5.player.Player;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -18,6 +18,7 @@ import javax.swing.JProgressBar;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
+
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -32,7 +33,7 @@ public class Game {
     private ArrayList<Result> results = new ArrayList<>();
 
     public Player NewEnemy(JLabel L1, JLabel L2,
-            JLabel L3, JLabel L4, JProgressBar pr2) {
+                           JLabel L3, JLabel L4, JProgressBar pr2) {
         action.setEnemyes();
         Player enemy = action.ChooseEnemy(L1, L2, L3, L4);
         action.HP(enemy, pr2);

@@ -1,9 +1,10 @@
 
-package com.mycompany.laba5.fight;
+package fixed_laba5.fight;
 
-import com.mycompany.laba5.player.Human;
-import com.mycompany.laba5.player.Items;
-import com.mycompany.laba5.player.Player;
+import fixed_laba5.player.Human;
+import fixed_laba5.player.Items;
+import fixed_laba5.player.Player;
+
 import javax.swing.JLabel;
 import javax.swing.JProgressBar;
 import javax.swing.JRadioButton;
@@ -14,9 +15,9 @@ public class ChangeTexts {
 
 
     public void NewRoundTexts(Player human, Player enemy, JProgressBar pr1,
-            JProgressBar pr2, JLabel label, JLabel label2, JLabel label3,
-            JLabel label4, JLabel label5, JLabel label6, JLabel label7, JLabel label8, JLabel label9,
-            int i, Items[] items, JRadioButton rb1, JRadioButton rb2, JRadioButton rb3) {
+                              JProgressBar pr2, JLabel label, JLabel label2, JLabel label3,
+                              JLabel label4, JLabel label5, JLabel label6, JLabel label7, JLabel label8, JLabel label9,
+                              int i, Items[] items, JRadioButton rb1, JRadioButton rb2, JRadioButton rb3) {
         label.setText(Integer.toString(((Human) human).getPoints()));
         label2.setText(Integer.toString(((Human) human).getExperience()) + "/" + ((Human) human).getNextExperience());
         label3.setText(Integer.toString(human.getLevel()) + " level");
